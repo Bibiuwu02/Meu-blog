@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
   
  * { 
      margin: 0; 
@@ -74,4 +74,74 @@
  }
  .footer-title { 
      font-size: 2rem; 
+ }
+ @media (min-width: 600px) {
+ } 
+ body { 
+     width: 100%; 
+     height: 100vh; 
+     font-size: 1rem; 
+     font-family: 'Sora', sans-serif; 
+ } 
+ header { 
+     width: 100%; 
+     height: auto; 
+     margin-bottom: 2vh;
+     background-color: var(--color-box);
+     padding: 15px;
+     line-height: 1.2;
+ }
+ .header-title { 
+     font-size: 3rem; 
+ } 
+ .title-span { 
+     font-size: 2rem; 
+     color: #fff; 
+ } 
+ .title { 
+     font-size: 1.5rem;
+     text-align: center;
+ } 
+ .main-section { 
+     text-align: center; 
+ } 
+ .main-box1 { 
+     display: flex; 
+     flex-direction: row; 
+     justify-content: center; 
+ } 
+ .main-article { 
+     margin-top: 20px; 
+     width: 80%; 
+     height: auto; 
+     text-align: left; 
+     line-height: 1.4; 
+     padding: 20px 20px 10px 20px; 
+     border: #000 5px solid; 
+ } 
+ .main-article p { 
+     font-size: 10px; 
+ } 
+ .name-span { 
+     font-size: 1rem; 
+     color: var(--color-special); 
+ } 
+ .article-span { 
+     font-size: 1rem; 
+ } 
+ .span-email { 
+     color: darkgreen; 
+     text-decoration: underline; 
+ } 
+ footer { 
+     width: 100%; 
+     height: auto; 
+     margin-top: 2vh;
+     background-color: var(--color-box);
+     line-height: 1.4;
+     padding: 15px;
+ }
+ .footer-title { 
+     font-size: 1rem;
+     text-align: center
  }
