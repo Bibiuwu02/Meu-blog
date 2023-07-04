@@ -149,25 +149,39 @@
  }
  .footer-title { 
      font-size: 1.5rem;
-     text-align: center
+     text-align: center;  
  }
-#dark-mode-button {
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+.light-mode article {
+  border: #000;
+}
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+.dark-mode article {
+  border: #fff;
+}
+.dark-mode .title-span {
+  color: #000;
+}
+#toggle-button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 76%;
+  right: 20px;
+  z-index: 9999;
+}
+#toggle-button:hover {
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
-  border: solid;
-  border-radius: 4px;
-}
-#dark-mode-button:hover {
-  background-color: #555;
-}
-body.dark-mode {
-  background-color: #111;
-  color: #fff;
-}
-body.dark-mode article {
-  border-color: #fff;
-}
-body.dark-mode .title-span {
-  color: #000;
 }
