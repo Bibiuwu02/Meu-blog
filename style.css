@@ -78,7 +78,6 @@
  .footer-title { 
      font-size: 2rem; 
  }
- 
  }
  
  @media (max-width: 600px) {
@@ -152,3 +151,23 @@
      font-size: 1.5rem;
      text-align: center
  }
+#dark-mode-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: solid;
+  border-radius: 4px;
+}
+#dark-mode-button:hover {
+  background-color: #555;
+}
+body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+body.dark-mode article {
+  border-color: #fff;
+}
+body.dark-mode .title-span {
+  color: #000;
+}
