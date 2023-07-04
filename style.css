@@ -6,7 +6,8 @@
      box-sizing: border-box; 
  } 
  :root { 
-     --color-box: #47bf67; 
+     --color-box: #47bf67;
+     --darkcolor-box: #2d6e3e;
      --color-special: #76fc6a; 
  }
  @media (min-width: 1600px){
@@ -167,6 +168,12 @@
 }
 .dark-mode .title-span {
   color: #000;
+}
+.dark-mode header {
+  background-color: var(--darkcolor-box);
+}
+.dark-mode footer {
+  background-color: var(--darkcolor-box);
 }
 #toggle-button {
   background-color: #fff;
