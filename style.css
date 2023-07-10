@@ -175,16 +175,98 @@
 .dark-mode footer {
   background-color: var(--darkcolor-box);
 }
-#toggle-button {
-  background-color: #fff;
-  color: #333;
-  border: none;
-  padding: 5px;
-  font-size: 16px;
-  border-radius: 5px;
+.light-mode .navbar li {
+  background: var(--color-box);
+}
+.dark-mode .navbar li {
+  background: var(--darkcolor-box);
+}
+.dark-mode .navbox {
+  background: var(--darkcolor-box);
+}
+.dark-mode #toggle-button {
+  background-color: var(--darkcolor-box);
+  font-size: 1.5rem;
+  color: #000;
   cursor: pointer;
+  border: none;
+}
+.light-mode #toggle-button {
+  background-color: var(--color-box);
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
 }
 #toggle-button:hover {
   background-color: #333;
   color: #fff;
 }
+.light-mode .header-box {
+  background: var(--color-box);
+}
+.dark-mode .header-box {
+  background: var(--darkcolor-box);
+}
+ .light-mode .navbox {
+    display: flex;
+    flex-direction: row;
+    background: var(--color-box);
+  }
+  .dark-mode .navbox {
+    display: flex;
+    flex-direction: row;
+    background: var(--darkcolor-box);
+  }
+ .dark-mode .navbar {
+   background-color: var(--darkcolor-box);
+   position: relative;
+   z-index: 999;
+   width: 100%;
+   font-size: 1.5rem;
+   color: #fff;
+ }
+.light-mode .navbar {
+		background-color: var(--color-box);
+		position: relative;
+		z-index: 999;
+		width: 100%;
+		font-size: 1.5rem;
+		color: #000;
+	}
+	.dark-mode .navbar ul {
+	  list-style-type: none;
+	 background: var(--darkcolor-box);
+	}
+	.light-mode .navbar ul {
+		list-style-type: none;
+		background: var(--color-box);
+	}
+	.navbar li {
+		display: inline-block;
+	}
+	.light-mode .navbar li a {
+		color: white;
+		display: block;
+		padding: 5px 10px;
+		text-decoration: none;
+	}
+	.dark-mode .navbar li a {
+	  color: #000;
+	  display: block;
+	  padding: 5px 10px;
+	  text-decoration: none;
+	}
+	.navbar ul ul {
+		position: absolute;
+		display: none;
+	}
+	.navbar ul ul li {
+		display: block;
+	}
+	.navbar li:hover ul {
+		display: block;
+	}
+	.navbar ul ul li a:hover {
+		background-color: #555;
+	}
