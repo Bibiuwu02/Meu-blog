@@ -8,7 +8,9 @@
 
 :root {
   --color-box: #47bf67;
+  --lighter-color: #3da859;
   --darkcolor-box: #2d6e3e;
+  --darker-color: #245731;
   --color-special: #76fc6a;
 }
 
@@ -30,7 +32,7 @@
 
   .header-title {
     font-size: 3rem;
-    text-align: left;
+    text-align: center;
   }
 
   .buttonSlider {
@@ -45,7 +47,7 @@
   }
 
   .dark-mode .buttonSlider {
-    width: auto;
+    width: 100px;
     height: 40px;
     border-radius: 130px;
     background: #000;
@@ -136,6 +138,30 @@ header {
 
 .header-title {
   font-size: 3rem;
+}
+
+.buttonSlider {
+  width: 60px;
+  height: 30px;
+  border-radius: 130px;
+  background: var(--darker-color);
+  display: flex;
+  justify-content: left;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 3px;
+}
+
+.dark-mode .buttonSlider {
+  width: 60px;
+  height: 30px;
+  border-radius: 130px;
+  background: var(--lighter-color);
+  display: flex;
+  justify-content: right;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 3px;
 }
 
 .title-span {
@@ -245,9 +271,8 @@ footer {
 #toggle-button {
   fill: #fff;
   background-color: #fff;
-  filter: drop-shadow(15px 3px 4px rgba(0, 0, 0, 0.25));
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   font-size: 10pt;
   display: flex;
@@ -256,17 +281,21 @@ footer {
 .dark-mode #toggle-button {
   fill: #fff;
   background-color: #fff;
-  filter: drop-shadow(15px 3px 4px rgba(0, 0, 0, 0.25));
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   font-size: 10pt;
   display: flex;
 }
 
 #toggle-button img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
+}
+
+.dark-mode #toggle-button img {
+  width: 25px;
+  height: 25;
 }
 
 #toggle-button:hover {
@@ -325,6 +354,7 @@ footer {
 .navbar ul {
   list-style-type: none;
   background: var(--color-box);
+  line-height: 1.4
 }
 
 .navbar li {
