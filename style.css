@@ -112,9 +112,6 @@
     padding: 15px;
   }
 
-  .footer-title {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 600px) {}
@@ -146,10 +143,11 @@ header {
   border-radius: 130px;
   background: var(--darker-color);
   display: flex;
-  justify-content: left;
+  justify-content: start;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 3px;
+  transition: all .5s;
 }
 
 .dark-mode .buttonSlider {
@@ -158,10 +156,11 @@ header {
   border-radius: 130px;
   background: var(--lighter-color);
   display: flex;
-  justify-content: right;
+  justify-content: end;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 3px;
+  transition: all .5s;
 }
 
 .title-span {
@@ -229,6 +228,7 @@ footer {
 .light-mode {
   background-color: #fff;
   color: #000;
+  transition: all .5s;
 }
 
 .light-mode article {
@@ -238,6 +238,7 @@ footer {
 .dark-mode {
   background-color: #000;
   color: #fff;
+  transition: all .5s;
 }
 
 .dark-mode article {
@@ -276,6 +277,7 @@ footer {
   border-radius: 50%;
   font-size: 10pt;
   display: flex;
+  transition: all .5s;
 }
 
 .dark-mode #toggle-button {
