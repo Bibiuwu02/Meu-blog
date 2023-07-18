@@ -273,7 +273,8 @@ footer {
 
 #toggle-button {
   fill: #fff;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -287,6 +288,7 @@ footer {
 
 .dark-mode #toggle-button {
   fill: #fff;
+  color: #000;
   background-color: #fff;
   width: 28px;
   height: 28px;
@@ -424,4 +426,16 @@ footer {
 .dark-mode .table-sobre th {
   text-align: left;
   padding-left: 10%;
+}
+
+.espere {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.espere img {
+  width: 200px;
+  height: auto;
+  display: flex;
 }
