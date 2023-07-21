@@ -22,6 +22,9 @@
     font-size: 16pt;
     font-family: 'Sora', sans-serif;
   }
+  .dark-mode body {
+    color: #fff;
+  }
   
   header {
     width: 100%;
@@ -32,6 +35,9 @@
     line-height: 1.4;
     text-align: start;
   }
+  .dark-mode header {
+    background-color: var(--darkcolor-box);
+  }
   
   .header-title {
     font-size: 4rem;
@@ -39,29 +45,22 @@
   }
   
   .buttonSlider {
-    width: 120px;
-    height: 60px;
+    width: 80px;
+    height: 48px;
     border-radius: 130px;
     background: var(--darker-color);
     display: flex;
     justify-content: start;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 6px;
     transition: all .5s;
   }
   
   .dark-mode .buttonSlider {
-    width: 120px;
-    height: 60px;
-    border-radius: 130px;
     background: var(--lighter-color);
     display: flex;
     justify-content: end;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 6px;
-    transition: all .5s;
+    border-color: #fff;
   }
   
   .title-span {
@@ -151,9 +150,6 @@
     color: #000;
   }
   
-  .dark-mode header {
-    background-color: var(--darkcolor-box);
-  }
   
   .dark-mode footer {
     background-color: var(--darkcolor-box);
@@ -172,35 +168,29 @@
   }
   
   #toggle-button {
-    fill: #fff;
+    fill: #000;
     color: #fff;
     background-color: #000;
-    width: 56px;
-    height: 56px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
-    font-size: 30pt;
-    line-height: 1.0;
-    text-align: center;
-    padding: 5px;
-    padding-left: 6px;
-    display: flex;
-    transition: all .5s;
-  }
-  
-  .dark-mode #toggle-button {
-    fill: #fff;
-    color: #000;
-    background-color: #fff;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    font-size: 30pt;
+    font-size: 25pt;
     line-height: 1.0;
     text-align: center;
     padding: 5px;
     padding-left: 8px;
     display: flex;
     transition: all .5s;
+    border-color: #000;
+  }
+  
+  .dark-mode #toggle-button {
+    fill: #fff;
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    transition: all .5s;
+    border-color: #fff;
   }
   
   #toggle-button:hover {
@@ -398,21 +388,16 @@
   }
   
   .dark-mode .buttonSlider {
-    width: 60px;
-    height: 30px;
-    border-radius: 130px;
     background: var(--lighter-color);
-    display: flex;
     justify-content: end;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 3px;
-    transition: all .5s;
   }
   
   .title-span {
     font-size: 2rem;
     color: #fff;
+  }
+  .dark-mode .title-span {
+    color: #000;
   }
   
   .title {
@@ -420,6 +405,9 @@
     text-align: center;
   }
   
+  .dark-mode header {
+    background-color: var(--darkcolor-box);
+  }
   .main-section {
     text-align: center;
   }
@@ -493,13 +481,7 @@
     border-color: #fff;
   }
   
-  .dark-mode .title-span {
-    color: #000;
-  }
   
-  .dark-mode header {
-    background-color: var(--darkcolor-box);
-  }
   
   .dark-mode footer {
     background-color: var(--darkcolor-box);
@@ -536,15 +518,6 @@
     fill: #fff;
     color: #000;
     background-color: #fff;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    font-size: 18pt;
-    text-align: center;
-    padding: 1px;
-    line-height: 1.0;
-    display: flex;
-    transition: all .5s;
   }
   
   #toggle-button:hover {
@@ -553,7 +526,6 @@
   }
   
   .dark-mode #toggle-button:hover {
-    background-color: #888;
     color: #000;
   }
   
@@ -572,8 +544,6 @@
   }
   
   .dark-mode .navbox {
-    display: flex;
-    flex-direction: row;
     background: var(--darkcolor-box);
   }
   
@@ -595,15 +565,14 @@
     color: #000;
   }
   
-  .dark-mode .navbar ul {
-    list-style-type: none;
-    background: var(--darkcolor-box);
-  }
-  
   .navbar ul {
     list-style-type: none;
     background: var(--color-box);
     line-height: 1.4
+  }
+
+  .dark-mode .navbar ul {
+    background: var(--darkcolor-box);
   }
   
   .navbar li {
@@ -620,9 +589,6 @@
   
   .dark-mode .navbar li a {
     color: #000;
-    display: block;
-    padding: 5px 10px;
-    text-decoration: none;
   }
   
   .navbar ul ul {
@@ -650,6 +616,7 @@
     font-size: 14pt;
     background-color: #fff;
     border: 3px #000 solid;
+    color: #000;
   }
   
   .table-sobre th {
@@ -667,28 +634,9 @@
   }
   
   .dark-mode .table-sobre {
-    width: 70%;
-    height: auto;
-    margin: auto;
-    padding: 5px;
-    font-size: 14pt;
     background-color: #000;
     border: 3px #fff solid;
     color: #fff;
-  }
-  
-  .dark-mode .table-sobre th {
-    text-align: left;
-    padding: 5px;
-    padding-right: 0;
-    font-weight: 500;
-  }
-  
-  .dark-mode .table-sobre td {
-    text-align: right;
-    padding: 5px;
-    padding-left: 0px;
-    font-weight: 300;
   }
   
   .espere {
