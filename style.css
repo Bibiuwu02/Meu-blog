@@ -368,6 +368,7 @@
     height: 100vh;
     font-size: 20pt;
     font-family: 'Sora', sans-serif;
+    font-weight: 200;
   }
   
   header {
@@ -382,6 +383,8 @@
   
   .header-title {
     font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
   }
   
   .buttonSlider {
@@ -418,6 +421,7 @@
   .title {
     font-size: 1.5rem;
     text-align: center;
+    font-weight: 400;
   }
   
   .main-section {
@@ -447,15 +451,18 @@
   .name-span {
     font-size: 13pt;
     color: var(--color-special);
+    font-weight: 450;
   }
   
   .article-span {
     font-size: 13pt;
+    font-weight: 300;
   }
   
   .span-email {
     color: darkgreen;
     text-decoration: underline;
+    font-weight: 600;
   }
   
   footer {
@@ -615,7 +622,7 @@
     display: block;
     padding: 5px 10px;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
   }
   
   .dark-mode .navbar li a {
@@ -643,13 +650,32 @@
   }
   
   .table-sobre {
-    width: 70%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    font-size: 14pt;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 1px;
+  }
+  .dark-mode .table-sobre {
+    width: auto;
     height: auto;
     margin: auto;
     padding: 5px;
     font-size: 14pt;
     background-color: #fff;
-    border: 3px #000 solid;
+    border: 1px solid #fff;
+    padding: 1px;
+  }
+  .table-sobre tr {
+    background-color: #fff;
+    padding: 1px;
+  }
+  .dark-mode .table-sobre tr {
+    background-color: #000;
+    padding: 1px;
   }
   
   .table-sobre th {
@@ -657,38 +683,22 @@
     padding: 5px;
     padding-right: 0;
     font-weight: 500;
+    padding: 5px;
   }
-  
+  .dark-mode .table-sobre th {
+    border-color: #000;
+    padding: 5px;
+  }
   .table-sobre td {
     text-align: right;
     padding: 5px;
     padding-left: 0;
     font-weight: 300;
-  }
-  
-  .dark-mode .table-sobre {
-    width: 70%;
-    height: auto;
-    margin: auto;
     padding: 5px;
-    font-size: 14pt;
-    background-color: #000;
-    border: 3px #fff solid;
-    color: #fff;
   }
-  
-  .dark-mode .table-sobre th {
-    text-align: left;
-    padding: 5px;
-    padding-right: 0;
-    font-weight: 500;
-  }
-  
   .dark-mode .table-sobre td {
-    text-align: right;
+    border-color: #fff;
     padding: 5px;
-    padding-left: 0px;
-    font-weight: 300;
   }
   
   .espere {
@@ -696,9 +706,8 @@
     display: flex;
     justify-content: center;
   }
-  
   .espere img {
-    width: 280px;
+    width: 300px;
     height: auto;
     display: flex;
   }
