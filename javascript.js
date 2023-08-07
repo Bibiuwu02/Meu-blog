@@ -1,4 +1,4 @@
-const toggleButton = document.getElementById('toggle-button');
+const switchButton = document.getElementById('switch-button');
 
 const isDarkMode = localStorage.getItem('darkMode') === 'true';
 
@@ -8,7 +8,7 @@ function applyDarkMode() {
 function removeDarkMode() {
     document.body.classList.remove('dark-mode');
 }
-function toggleMode() {
+function switchMode() {
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
     if (isDarkMode) {
         removeDarkMode();
@@ -18,7 +18,7 @@ function toggleMode() {
         localStorage.setItem('darkMode', true);
     }
 }
-toggleButton.addEventListener('click', toggleMode);
+switchButton.addEventListener('click', switchMode);
 if (isDarkMode) {
     applyDarkMode();
 }
