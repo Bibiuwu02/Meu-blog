@@ -15,7 +15,7 @@
   --neutral-gray: #999;
 }
 
-/* Estilo para computador */
+  /* Estilo para computador */
 @media (max-width: 1600px) {
   /* Modo claro/padrão */
   .light-mode {
@@ -283,6 +283,8 @@
   /* Área de slide da página Galeria */
   .slide-section {
     padding: 2rem;
+    display: flex;
+    justify-content: center;
   }
   .slider-wrapper {
     position: relative;
@@ -291,6 +293,8 @@
   }
   /* Slide de imagens da Galeria */
   .slider {
+    width: 48rem;
+    height: 48rem;
     display: flex;
     aspect-ratio: 16/9;
     overflow-x: auto;
@@ -301,6 +305,7 @@
   }
   /* Configuração das imagens */
   .slider img {
+    width: 100%;
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
@@ -329,7 +334,7 @@
   }
 }
 
-/* Estilo responsivo da página para celular */
+  /* Estilo responsivo da página para celular */
 @media (max-width: 600px) {
   /* Modo claro/padrão */
   .light-mode {
@@ -350,7 +355,7 @@
   .header-box {
     width: 100%;
     height: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     padding: 15px;
     line-height: 1.2;
     text-align: center;
@@ -538,7 +543,7 @@
   footer {
     width: 100%;
     height: auto;
-    margin-top: 3rem;
+    margin-top: 2rem;
     background-color: var(--color-box);
     line-height: 1.4;
     padding: 15px;
@@ -558,10 +563,12 @@
     width: auto;
     height: auto;
     margin: auto;
-    padding: 20px 20px 10px 20px;
+    margin-top: 1rem;
+    padding: 1px;
     font-size: 14pt;
-    background-color: #fff;
+    background-color: #000;
     border: 1px solid #000;
+    color: #000;
   }
   .table-sobre tr {
     background-color: #fff;
@@ -581,16 +588,16 @@
   }
   /* Modo escuro da tabela Sobre */
   .dark-mode .table-sobre {
-    background-color: #000;
+    background-color: #fff;
     border-color: #fff;
     color: #fff;
   }
   .dark-mode .table-sobre tr {
-    background-size: #000;
+    background-color: #000;
   }
   /* Imagem de placeholder */
   .espere {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
   }
@@ -601,15 +608,20 @@
   }
   /* Área de slide da página Galeria */
   .slide-section {
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 0;
   }
   .slider-wrapper {
     position: relative;
-    max-width: 48rem;
-    margin: 0 auto;
+    max-width: 23rem;
+    margin: 0;
+    padding: 0;
   }
   /* Slide de imagens da Galeria */
   .slider {
+    width: 23rem;
+    height: 23rem;
     display: flex;
     aspect-ratio: 16/9;
     overflow-x: auto;
