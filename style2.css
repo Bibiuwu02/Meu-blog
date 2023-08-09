@@ -138,7 +138,7 @@
     transition: all .5s;
   }
   /* Caixa do botão - Modo escuro */
-  .dark-mode buttonSlider {
+  .dark-mode .buttonSlider {
     background-color: var(--lighter-color);
     display: flex;
     justify-content: end;
@@ -362,7 +362,7 @@
     background-color: var(--color-box);
   }
   /* Cabeçario modo escuro */
-  .dark-mode header {
+  .dark-mode .header-box {
     background-color: var(--darkcolor-box);
   }
   /* Titulo do cabeçario */
@@ -403,6 +403,7 @@
     width: 100%;
     font-size: 1.5rem;
     color: #000;
+    background-color: var(--color-box);
   }
   .navbar ul {
     list-style: none;
@@ -429,6 +430,7 @@
   /* Modo escuro da barra de navegação */
   .dark-mode .navbar {
     color: #fff;
+    background-color: var(--darkcolor-box);
   }
   .dark-mode .navbar ul {
     background-color: var(--darkcolor-box);
@@ -457,7 +459,7 @@
     transition: all .5s;
   }
   /* Caixa do botão - Modo escuro */
-  .dark-mode buttonSlider {
+  .dark-mode .buttonSlider {
     background-color: var(--lighter-color);
     display: flex;
     justify-content: end;
@@ -482,6 +484,7 @@
     fill: #fff;
     color: #000;
     background-color: #fff;
+    padding-left: 1px;
     display: flex;
   }
   /* Botão modo claro com Hover */
@@ -638,13 +641,13 @@
   }
   /* Navegador do slider de imagens */
   .slider-nav {
+    margin: auto;
     display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
+    justify-content: center;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    background-color: var(--color-box);
   }
   .slider-nav a {
     width: 0.5rem;
@@ -653,9 +656,11 @@
     background-color: #fff;
     opacity: 0.75;
     transition: opacity ease 250ms;
+    margin-top: -125px;
   }
   /* Navegador do slider com Hover */
   slider-nav a:hover {
     opacity: 100%;
+    color: #fff;
   }
 }
